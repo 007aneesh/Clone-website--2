@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+}
+nav {
+  background: transparent;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  color: black;
+  justify-content: space-around;
+}
+label.logo img {
+  margin-left: 200px;
+  margin-top: 15px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 120px;
+  padding: 0px 100px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  font-size: 8px;
+}
+nav ul li a {
+  color: #585371;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: none;
+  transition: 0.5s;
+  color: rgb(0, 200, 214);
+}
+a.about:hover {
+  background: none;
+  text-decoration: none;
+}
+a.btn11:hover {
+  color: white;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+.button {
+  width: 70px;
+  height: 35px;
+  background: rgb(0, 200, 214);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 5px rgba(0, 200, 214, 0.267);
+}
+div.main {
+  margin-left: 30px;
+  margin-right: 50px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+h1.h {
+  font-size: 55px;
+}
+p {
+  font-size: 30px;
+}
+div.main1 {
+  justify-content: center;
+  align-items: center;
+}
+div.main1 div {
+  margin-top: 130px;
+  margin-left: 50px;
+}
+div.img1 img {
+  width: 580px;
+  height: 560px;
+  z-index: 2;
+}
+img.appstore {
+  border-radius: 5px;
+  margin-top: 15px;
+}
+iframe {
+  margin-left: 20%;
+  border-radius: 5px;
+}
+div.img2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn2 {
+  width: 170px;
+  background: white;
+  color: rgba(0, 255, 255, 0.5);
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 4px rgba(0, 255, 255, 0.253);
+}
+.f1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+}
+.f1 div li {
+  opacity: 0.6;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+}
+nav ul li a {
+  font-size: 16px;
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul.nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .display {
+    flex-direction: row;
+  }
+}
