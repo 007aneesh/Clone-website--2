@@ -167,6 +167,7 @@ div.img2 {
     height: auto;
     justify-content: center;
     align-items: center;
+    margin-right: 5px;
   }
   .h2div {
     font-size: 15px;
