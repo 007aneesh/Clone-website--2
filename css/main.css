@@ -87,8 +87,8 @@ div.main1 {
   align-items: center;
 }
 div.main1 div {
-  margin-top: 130px;
-  margin-left: 50px;
+  margin-top: 35px;
+  margin-left: 8px;
 }
 div.img1 img {
   width: 580px;
@@ -98,6 +98,10 @@ div.img1 img {
 img.appstore {
   border-radius: 5px;
   margin-top: 15px;
+}
+div.link {
+  margin-top: -100px;
+  display: flex;
 }
 iframe {
   margin-left: 20%;
@@ -122,6 +126,7 @@ div.img2 {
   align-items: center;
   height: 300px;
 }
+
 .f1 div li {
   opacity: 0.6;
 }
@@ -129,14 +134,72 @@ div.img2 {
   display: none;
 }
 @media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: -150px;
+  }
+  h1.h {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
+  div.main {
+    font-size: 1px;
+    width: auto;
+    height: auto;
+  }
+  div.img1 {
+    display: none;
+  }
+  h1.hcompany {
+    font-size: 30px;
+  }
+  marquee {
+    width: auto;
+    height: auto;
+    z-index: -1000px;
+  }
+  iframe {
+    width: auto;
+    height: auto;
+  }
+  .f1 {
+    flex-direction: column;
+    margin-top: 200px;
+    padding: 35px;
+  }
+  div.general {
+    margin-top: 15px;
+    justify-content: center;
+  }
+  div.company {
+    margin-top: 25px;
+    margin-right: 45px;
+  }
+  div.legal {
+    margin-right: 36px;
+  }
+  div.follow {
+    margin-right: 50px;
+  }
 }
 nav ul li a {
   font-size: 16px;
 }
-
+.main-1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
+  }
+  label.logo {
+    font-size: 30px;
   }
   ul.nav {
     position: fixed;
@@ -152,6 +215,7 @@ nav ul li a {
     display: block;
     margin: 50px 0;
     line-height: 30px;
+    color: white;
   }
   nav ul li a {
     font-size: 20px;
@@ -163,8 +227,5 @@ nav ul li a {
   }
   #check:checked ~ ul {
     left: 0;
-  }
-  .display {
-    flex-direction: row;
   }
 }
