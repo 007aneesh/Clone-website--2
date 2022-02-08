@@ -149,21 +149,30 @@ div.img2 {
     font-size: 1px;
     width: auto;
     height: auto;
+    margin-left: 68px;
   }
   div.img1 {
     display: none;
   }
   h1.hcompany {
     font-size: 30px;
+    margin-left: 2px;
   }
   marquee {
     width: auto;
     height: auto;
-    z-index: -1000px;
   }
   iframe {
     width: auto;
     height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .h2div {
+    font-size: 15px;
+  }
+  .btn2 {
+    width: 100px;
   }
   .f1 {
     flex-direction: column;
@@ -172,17 +181,19 @@ div.img2 {
   }
   div.general {
     margin-top: 15px;
-    justify-content: center;
+    float: left;
+    text-align: center;
   }
   div.company {
     margin-top: 25px;
-    margin-right: 45px;
+
+    text-align: center;
   }
   div.legal {
-    margin-right: 36px;
+    text-align: center;
   }
   div.follow {
-    margin-right: 50px;
+    text-align: center;
   }
 }
 nav ul li a {
